@@ -22,26 +22,26 @@ resume = {
    
 // // for...in loop
 
-//    for(let key in resume){
-//     console.log(key, ":", resume[key])
-//    }
+   for(let key in resume){
+    console.log(key, ":", resume[key])
+   }
 
 //--------------------------------------------------------------------   
 
 // //  for...of loop
 
-    //  for(let key of Object.keys(resume)){
-    //     console.log(key, ":", resume[key])
-    //  }
+     for(let key of Object.keys(resume)){
+        console.log(key, ":", resume[key])
+     }
 
 //--------------------------------------------------------------------   
 
 // for...Each loop
 
 
-//   Object.entries(resume).forEach(entry => {
-//     console.log(entry[0], ":", entry[1])
-//   })
+  Object.entries(resume).forEach(entry => {
+    console.log(entry[0], ":", entry[1])
+  })
 
 //--------------------------------------------------------------------   
 
