@@ -5,4 +5,4 @@
 [TASK LINK] =>
 (https://docs.google.com/document/d/1K6jW6TPmqWvzoRAm2t-GlOAxKmMRsLt5zaCsdcH_3LM/edit)
 
-![alt text](<Desktop Screenshot 2024.03.01 - 18.47.17.34.png>)
+![alt text](../Desktop%20Screenshot%202024.03.01%20-%2018.47.17.34.png)
