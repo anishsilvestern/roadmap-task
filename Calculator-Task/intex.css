@@ -3,7 +3,7 @@ body {
     background-color: rgb(243, 242, 211);
 }
 
-h1 {
+#title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: yellow;
@@ -28,10 +28,15 @@ h1 {
     font-size: 40px;
     font-weight: bold;
     width: 95%;
-    margin: 0px auto;
+    margin: 0px 2%;
     border-radius: 10px;
     padding-left: 10px;
 }
+
+#inputdisplay::placeholder {
+    color: black;
+}
+
 
 .allbutton {
     width: 95%;
@@ -40,15 +45,30 @@ h1 {
     padding: 10px 0;
 }
 
-.clear {
+
+
+#clear {
     color: red;
 }
 
-.equalto {
-    background-color: rgb(255, 251, 0);
+#clear:hover {
+    background-color: red;
+    color: white;
+}
+
+.equalto {   
+    background-color: rgb(255, 251, 0); 
+    right: 2.5%;  
+    display: flex;
+    text-align: center;
+    justify-content: center;
     position: absolute;
     width: 47.5%;
     
+}
+
+.equalto:hover {
+    background-color: aquamarine;
 }
 
 
@@ -73,8 +93,9 @@ h1 {
 
         .equalto {
             background-color: rgb(255, 251, 0);
-            position: absolute;
+            margin-right: 23.7%;
             width: 23.8%;
+            position: fixed;
     }
 }
     
