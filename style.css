@@ -54,3 +54,12 @@ body {
     background-color: black;
     border-color: black;
 }
+
+.weather-info {
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    background-color: white;
+    margin: 0 50px;
+    border-radius: 5px;
+}

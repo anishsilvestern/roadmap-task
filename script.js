@@ -56,7 +56,18 @@
  countryCode.innerText = `Country Code: ${countryData.cca3}`;
  card.appendChild(countryCode)
 
- weatherApi(countryData , card)
+ let weatherCheck = document.createElement('button');
+ weatherCheck.classList.add('btn', "btn-primary")
+ weatherCheck.innerText = "Click for Weather";
+ card.appendChild(weatherCheck)
+
+ let weatherInfo = document.createElement('p');
+ weatherInfo.classList.add('text-center', 'mt-3', 'd-none', 'weather-info');
+ card.appendChild(weatherInfo)
+
+weatherCheck.addEventListener('click', (e) => {
+toggleWeather(countryData, e, weatherInfo);
+});
     
  }
 
@@ -71,40 +82,29 @@
     card.appendChild(countryCapital)
  }
  
- function weatherApi(countryData , card) {
-    if(countryData.capital){
-        fetch('https://api.openweathermap.org/data/2.5/weather?q=${countryData.capital},${countryData.cca3}&appid=9b3abd72af5e8ee4c215adb53b59b0e5')
-        .then(respones => respones.json())
-        .then(data => {
-            console.log(data)
-        })
-        .catch(error => console.error("Error Fecthing data", error));
- 
 
-        let weatherCheck = document.createElement('a');
-        weatherCheck.classList.add('btn', "btn-primary")
-        weatherCheck.href = `https://api.openweathermap.org/data/2.5/weather?q=${countryData.capital},${countryData.cca3}&appid=9b3abd72af5e8ee4c215adb53b59b0e5`
-        weatherCheck.innerText = "Click for Weather";
-        card.appendChild(weatherCheck)
-    }else{
-        fetch('https://api.openweathermap.org/data/2.5/weather?q=${countryData.cca3}&appid=9b3abd72af5e8ee4c215adb53b59b0e5')
-        .then(respones => respones.json())
-        .then(data => {
-            console.log(data)
-        })
-        .catch(error => console.error("Error Fecthing data", error));
- 
+ async function toggleWeather(countryData, e, weatherInfo) {
+    let [lat, lon] = countryData.latlng;
 
-        let weatherCheck = document.createElement('a');
-        weatherCheck.classList.add('btn', "btn-primary")
-        weatherCheck.href = `https://api.openweathermap.org/data/2.5/weather?q=${countryData.cca3}&appid=9b3abd72af5e8ee4c215adb53b59b0e5`
-        weatherCheck.innerText = "Click for Weather";
-        card.appendChild(weatherCheck)
-      }
- }
+    weatherInfo.classList.remove('d-none');
+    e.target.classList.add('d-none');
 
+    try {
+        let weather = await getWeather(lat, lon);
+        weatherInfo.textContent = `Weather: ${weather.weather[0].description}`;
+    } catch (error) {
+        console.error("Error fetching weather", error);
+        weatherInfo.textContent = "Weather data not available";
+    }
+}
 
+async function getWeather(lat, lon) {
+    let apiKey = 'a3eb26f47d7fa7e06a5e55ca741ab0b3';
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
+    let response = await fetch(url);
+    let weather = await response.json();
 
-
+    return weather;
+}
 
