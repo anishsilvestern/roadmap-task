@@ -1,3 +1,50 @@
+
 body {
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
 }
+
+.heading {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.foodheading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    
+}
+
+
+textarea {
+    border-radius: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.submit {
+    margin-top: 28px;
+}
+
+.tableheader {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
