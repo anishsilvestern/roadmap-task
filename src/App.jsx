@@ -53,15 +53,15 @@ const App = (props) => {
     };
 
   return (
-
-    <div className='row justify-content-around my-4'>
+    <div className='container '>
+    <div className='row my-4'>
       {Data.cards.map((card, index) => (
         <div key={index} className='col'>
           <Card cardData={card} />
         </div>
       ))}
     </div>
-
+    </div>
 );
 }
 

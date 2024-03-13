@@ -6,7 +6,7 @@ let Card = ({cardData}) => {
     return (
     <div className='col-md-4 col-sm-6 mb-4'>   
     <div className="
-     card mx-3" style={{width: '25rem', borderRadius: '1rem'}}>
+     card" style={{width: '25rem', borderRadius: '1rem'}}>
     <div className="card-body list-group">
       <p className='text-center'>{cardData.type}</p>
       <h2 className="card-title text-center" style={{fontWeight: "bold"}}>{cardData.cost}</h2>
