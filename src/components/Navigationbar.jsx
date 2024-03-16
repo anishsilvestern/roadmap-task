@@ -1,12 +1,6 @@
-import { useState } from 'react'
-import React from 'react';
 import './Navigationbar.css'
-import Card from './Card';
-
 
 const Navigationbar = ({count}) => {
-
-   
 
     return (
   <nav className="navbar navbar-expand-lg">
