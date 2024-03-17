@@ -1,6 +1,6 @@
 # **React Shopping Cart Task**
 
-## Task Link [Netlify] => () 
+## Task Link [Netlify] => (https://65f70ee1846e7c97efa42360--shopping-cart-add.netlify.app/) 
 
 # Task Description:
 
