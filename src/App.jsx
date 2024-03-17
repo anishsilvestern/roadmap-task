@@ -13,7 +13,7 @@ const Product =  {
    details: 
    [
        {
-           photo:<img src= './src/assets/camera.jpg' className="card-img-top mt-2" style={{borderRadius: '10px'}} alt="Camera Photo"/>,
+           photo:<img src= './src/components/assets/camera.jpg' className="card-img-top mt-2" style={{borderRadius: '10px'}} alt="Camera Photo"/>,
            rating: '★★★★☆',
            name: 'Camera',
            Price: '₹1,50,000 - ₹2,50,000'
