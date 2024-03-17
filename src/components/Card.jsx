@@ -15,7 +15,7 @@ const Card = ({productdetails, addToCart , removeFromCart}) => {
     return (
     <div className="col-lg-3" >   
         <div className="card container-fluid   " style={{width: "18rem"}}>
-                <img src={productdetails.photo} className="card-img-top mt-2" alt="Product Photo"></img>
+                 {productdetails.photo}  
             <div className="card-body text-center">
                 <h3 className="card-title mt-4">{productdetails.name}</h3>
                 <h5 className="card-title mt-3">{productdetails.rating}</h5>
