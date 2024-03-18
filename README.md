@@ -1,7 +1,5 @@
 # **React Shopping Cart Task**
 
-## Task Link [Netlify] => (https://65f70ee1846e7c97efa42360--shopping-cart-add.netlify.app/) 
-
 # Task Description:
 
 Create a shopping cart using React that allows users to add and remove items from the cart. 
