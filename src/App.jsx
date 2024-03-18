@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import Navigationbar from './components/Navigationbar'
-import image1 from "./src/components/assets/camera.jpg"
+import image1 from "./components/assets/camera.jpg"
 import Banner from './components/banner'
 import Card from './components/Card'
 
