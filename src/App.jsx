@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import Navigationbar from './components/Navigationbar'
+import image1 from "./src/components/assets/camera.jpg"
 import Banner from './components/banner'
 import Card from './components/Card'
 
@@ -13,7 +14,7 @@ const Product =  {
    details: 
    [
        {
-           photo:<img src= './src/components/assets/camera.jpg' className="card-img-top mt-2" style={{borderRadius: '10px'}} alt="Camera Photo"/>,
+           photo:<img src= {image1} className="card-img-top mt-2" style={{borderRadius: '10px'}} alt="Camera Photo"/>,
            rating: '★★★★☆',
            name: 'Camera',
            Price: '₹1,50,000 - ₹2,50,000'
