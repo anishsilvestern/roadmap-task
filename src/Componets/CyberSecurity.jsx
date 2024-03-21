@@ -1,10 +1,14 @@
 import Cyber1 from "../assets/Cyber-1.png"
 import Cyber2 from "../assets/Cyber-2.png"
 import Cyber3 from "../assets/Cyber-3.png"
+import './Common.css'
 
 const CyberSecurity = () => {
   return (
     <div>
+      <div>
+        <h1 className="text-center p-3 bg-primary innerTitle"><strong>CYBER SECURITY</strong></h1>
+      </div>
       <div className="row row-cols-1 row-cols-md-3 g-4 my-3 mx-2">
   <div className="col">
     <div className="card h-100">

@@ -12,6 +12,10 @@ import DataScience from "./Componets/DataScience"
       element: <NavBar />,
       children: [
         {
+          path: '',
+          element: <TrendingArticles />
+        },
+        {
           path: 'TrendingArticles',
           element: <TrendingArticles />
         },
@@ -35,6 +39,8 @@ import DataScience from "./Componets/DataScience"
       
     }
   ])
+
+  
 
 const App = () => {
   return <RouterProvider router={router}/>
